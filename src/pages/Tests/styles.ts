@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const HomeContainer = styled.div`
+export const TestsContainer = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
@@ -8,89 +8,51 @@ export const HomeContainer = styled.div`
     flex-direction: column;
     position: relative;
 
-    img {
-        width: 80%;
-        height: auto;
-    }
+
   
 `
 
-
-export const MainPanel = styled.div`
+export const CategoriesContainer = styled.div`
     width: 100%;
     display: flex;
-    margin: 40px 10px;
-    margin-top: 200px;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 700;
-    color: ${({ theme }) => theme['base-card']};
+    gap: 2rem;
+    `
 
-    span {
-        display: contents;
-        flex-direction: row;
+export const CarouselContainer = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+    overflow-x: auto;
 
+    ::-webkit-scrollbar {
+        display: none;
     }
 
 `
 
-export const MainPanelDescription = styled.div`
-    width: 100%;
+export const CarouselItem = styled.div`
+    min-width: 150px;
+    margin: 0.5rem;
     display: flex;
-    margin: 50px auto;
+    min-height: 200px;
     justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    font-size: 1.25rem;
-    gap: 2rem;
-    div {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 2rem;
-        button {
-            font-weight: 500;
-            display: flex;
-            gap: 0.5rem;
-            justify-content: center;
-            align-items: center;
-            padding:0.5rem  2rem;
-            transition: all 0.3s ease-in-out;
-            height: 50px;
-            border-radius: 10px;
-            border: none;
-            background: linear-gradient(-45deg, #0D0A0B, #4b2995, #4b2995);
-            animation: gradient 15s ease infinite;
-            background-size: 400% 400%;
-
-            
-        }
-
-        button:hover {
-            border: 2px solid ${({ theme }) => theme['base-card']};
-            transform: scale(1.1);
-        }
-
-        button + button {
-            background: linear-gradient(to right, #1db954, #4b2995);
-        }
-
-       
-
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-}
-
+    align-items: center;
+    background-color: white;
+    
+    /* img {
+        width: 100%;
+        border-radius: 5px;
+    } */
+ 
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        transform: scale(1.05);
     }
-
 `

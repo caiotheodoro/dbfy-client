@@ -20,7 +20,6 @@ export const MainPanel = styled.div`
     width: 100%;
     display: flex;
     margin: 40px 10px;
-    margin-top: 200px;
     justify-content: center;
     flex-direction: column;
     text-align: center;
@@ -43,6 +42,7 @@ export const MainPanelDescription = styled.div`
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    font-weight: 400;
     font-size: 1.25rem;
     gap: 2rem;
     div {

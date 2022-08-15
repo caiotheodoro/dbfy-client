@@ -24,6 +24,10 @@ export const LayoutContainer = styled.div`
   filter: blur(160px);
 }
 
+main {
+  padding-top: 200px;
+}
+
 `
 
 
@@ -58,6 +62,7 @@ export const Navbar = styled.header<NavbarProps>`
 
 export const Logo = styled.div`
     font-weight: bold;
+    cursor: pointer;
     font-size: 1.875rem;
     color: #fff;
     border-radius: 50%;

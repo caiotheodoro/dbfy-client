@@ -3,8 +3,9 @@ import { HomeContainer, MainPanel, MainPanelDescription } from './styles'
 import { Banner } from '../../components/Banner'
 import { motion } from 'framer-motion'
 import { Code, FastForward } from 'phosphor-react'
+import { useNavigate } from 'react-router-dom'
 export function Home() {
-
+  const navigate = useNavigate()
 
   useEffect(() => {
 
@@ -13,8 +14,7 @@ export function Home() {
       const changeFont = () => {
         const fonts = ['Roboto', 'Arial ', 'Poppins', 'RHelvetica', 'Tahoma', 'Trebuchet MS', 'Times New Roman', 'Georgia', 'Garamond', 'Courier New']
         const colors = ['#f44336', '#e91e63', '#9c27b0', '#673ab7', '#3f51b5', '#2196f3', '#03a9f4', '#00bcd4', '#009688', '#4caf50', '#8bc34a', '#cddc39', '#ffeb3b', '#ffc107', '#ff9800', '#ff5722', '#795548', '#9e9e9e', '#607d8b']
-        const randomFont = fonts[Math.floor(Math.random() * fonts.length)]
-        taste.style.fontFamily = randomFont
+        taste.style.fontFamily = fonts[Math.floor(Math.random() * fonts.length)]
         taste.style.color = colors[Math.floor(Math.random() * colors.length)]
         setTimeout(changeFont, 500);
       }
@@ -46,7 +46,7 @@ export function Home() {
               <Code size={24} />
               Behind the scenes
             </button>
-            <button>
+            <button onClick={() => navigate('/tests')}>
               Check out some tests
               <FastForward size={24} />
             </button>

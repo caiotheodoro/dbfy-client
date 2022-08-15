@@ -2,7 +2,7 @@ export const defaultTheme = {
   white: '#FFF',
 
   'gray-500': '#7C7C8A',
-  'base-text': '#574F4D',
+  'base-text': '#F3F2F2',
   'base-label': '#8D8686',
   'base-hover': '#D7D5D5',
   'base-button': '#E6E5E5',
