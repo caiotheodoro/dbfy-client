@@ -8,7 +8,7 @@ export const ColorBox = styled.div`
   color: white;
   cursor: pointer;
   :hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 0 0 12px 0 var(--color-shadow);
   }
 `
