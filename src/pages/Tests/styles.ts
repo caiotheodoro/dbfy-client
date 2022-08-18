@@ -36,7 +36,12 @@ export const CarouselContainer = styled.div`
 
 `
 
-export const CarouselItem = styled.div`
+interface ICarouselItemProps {
+    color1: string
+    color2: string
+}
+
+export const CarouselItem = styled.div<ICarouselItemProps>`
     min-width: 150px;
     margin: 0.5rem;
     display: flex;
@@ -55,5 +60,9 @@ export const CarouselItem = styled.div`
     &:hover {
         transform: scale(1.05);
     }
+
+    background:
+    linear-gradient(to right, ${props => props.color1}, ${props => props.color2},transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
 `
 
