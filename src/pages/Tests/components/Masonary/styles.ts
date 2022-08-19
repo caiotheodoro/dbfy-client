@@ -6,11 +6,21 @@ export const ColorBox = styled.div`
   place-content: center;
   display: grid;
   color: white;
+  position: relative;
   cursor: pointer;
   
   :hover {
     transform: scale(1.05);
-    box-shadow: 0 0 12px 0 var(--color-shadow);
+    div {
+      display: block;
+
+    }
+
+    img {
+    filter: blur(2px);
+
+    }
+
   }
 
 
@@ -22,5 +32,21 @@ export const ColorBox = styled.div`
     border-radius: 1em;
     object-position: top;
     filter: grayscale(2%) contrast(1.1) brightness(1.0) blur(0.6px) opacity(0.9);
+  }
+
+  div {
+    position: absolute;
+    z-index: 10;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  h2 {
+    font-family: "Baloo 2", cursive;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: ${({ theme }) => theme["white"]};
+    text-shadow: 0 0 5px black;
   }
 `
