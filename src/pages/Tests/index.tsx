@@ -42,8 +42,10 @@ export function Tests() {
           id='carousel'
         >
           <ArrowCircleLeft size={40} weight="fill" onClick={() => handleScroll("right")} className="left" />
-          {Array.from({ length: 10 }).map((_, index) => (
-            <CarouselItem key={index} color1={randomColor()} color2={randomColor()} />
+          {cards.map((item, index) => (
+            <CarouselItem key={item} color={randomColor()} >
+              <h3>{item}</h3>
+            </CarouselItem>
           ))}
         </CarouselContainer>
         <ArrowCircleRight size={40} weight="fill" onClick={() => handleScroll("left")} className="right" />
@@ -52,3 +54,14 @@ export function Tests() {
     </TestsContainer>
   )
 }
+
+
+const cards = [
+  'All',
+  'Lifestyle',
+  'Movies',
+  'Art',
+  'Books',
+  'Culture',
+
+]

@@ -55,8 +55,7 @@ export const CarouselContainer = styled.div`
 `
 
 interface ICarouselItemProps {
-    color1: string
-    color2: string
+    color: string
 }
 
 export const CarouselItem = styled.div<ICarouselItemProps>`
@@ -69,6 +68,11 @@ export const CarouselItem = styled.div<ICarouselItemProps>`
     align-items: center;
     background-color: white;
     
+    h3 {
+        font-size: 2rem;
+        font-family: 'Baloo 2', cursive;
+    }
+
     /* img {
         width: 100%;
         border-radius: 5px;
@@ -80,8 +84,6 @@ export const CarouselItem = styled.div<ICarouselItemProps>`
         transform: scale(1.05);
     }
 
-    background:
-    linear-gradient(to right, ${props => props.color1}, ${props => props.color2},transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+    background-color:${props => props.color};
 `
 
