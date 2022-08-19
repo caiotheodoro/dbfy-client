@@ -19,6 +19,22 @@ export const CategoriesContainer = styled.div`
     align-items: flex-start;
     flex-direction: column;
     gap: 2rem;
+    position: relative;
+    
+    svg {
+        position: absolute;
+        
+        top: 190px;
+        cursor: pointer;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+    .left {
+        left: -10px;
+    }
+    .right {
+        right: -20px;
+    }
     `
 
 export const CarouselContainer = styled.div`
@@ -34,6 +50,8 @@ export const CarouselContainer = styled.div`
         display: none;
     }
 
+   
+
 `
 
 interface ICarouselItemProps {
@@ -46,6 +64,7 @@ export const CarouselItem = styled.div<ICarouselItemProps>`
     margin: 0.5rem;
     display: flex;
     min-height: 200px;
+    cursor: pointer;
     justify-content: center;
     align-items: center;
     background-color: white;
