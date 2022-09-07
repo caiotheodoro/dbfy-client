@@ -1,0 +1,137 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "All",
+            "subcategories": [
+                "All",
+                "Lifestyle",
+                "Fashion",
+                "Beauty",
+                "Health",
+                "Food",
+                "Travel",
+                "Sports",
+                "Technology",
+                "Business",
+                "Movies",
+                "Art",
+                "Books",
+                "Culture"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Lifestyle",
+            "subcategories": [
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Fashion",
+            "subcategories": [
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Beauty",
+            "subcategories": [
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Health",
+            "subcategories": [
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Food",
+            "subcategories": [
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Travel",
+            "subcategories": [
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Sports",
+            "subcategories": [
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Technology",
+            "subcategories": [
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Business",
+            "subcategories": [
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Movies",
+            "subcategories": [
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Art",
+            "subcategories": [
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Books",
+            "subcategories": [
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Culture",
+            "subcategories": [
+            ]
+        }
+
+    ],
+    "articles" : [
+        {
+            "id": 1,
+            "title": "Clothe for the summer",
+            "banner": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+            "category": ["Fashion"]
+        },
+        {
+            "id": 2,
+            "title": "20's fashion",
+            "banner": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+            "category": ["Fashion"]
+
+        },
+        {
+            "id": 3,
+            "title": "Fast food",
+            "banner": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+            "category": ["Food"]
+        }, 
+        {
+            "id": 4,
+            "title": "Jewelry",
+            "banner": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+            "category": ["Fashion"]
+        },
+        {
+            "id": 5,
+            "title": "Places to travel",
+            "banner": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+            "category": ["Travel", "Lifestyle", "Culture"]
+        }
+
+    ]
+  }
